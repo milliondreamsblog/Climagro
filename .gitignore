@@ -1,0 +1,58 @@
+# Ignore cache and log files (except index.html to prevent 403 errors)
+application/cache/*
+!application/cache/index.html
+
+application/logs/*
+!application/logs/index.html
+
+# Ignore session files (if session data is stored locally)
+application/session/*
+
+# Ignore CodeIgniter system folder if using it via Composer or external source
+system/*
+
+# Ignore Composer dependencies (if used)
+vendor/
+
+# Ignore Node.js dependencies (if used for frontend tools)
+node_modules/
+
+# Environment variables (Laravel-style or custom env config)
+.env
+.env.*
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# PHP error logs
+error_log
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.swp
+*.old
+
+# Build or cache outputs (if any)
+dist/
+build/
+
+# User/test files you may not want in prod
+phpinfo.php
+nope.php
+
+# Ignore assets you may want to build later
+asset/tmp/
+asset/cache/
+
+# Optional: ignore any custom debug scripts
+debug.php

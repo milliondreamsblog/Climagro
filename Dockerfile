@@ -5,7 +5,7 @@ FROM php:8.1-cli
 WORKDIR /var/www/html
 
 # Copy everything into container
-COPY . .
+COPY public/. 
 
 # Expose the web server port
 EXPOSE 10000
